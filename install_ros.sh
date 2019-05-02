@@ -1,4 +1,6 @@
 #!/bin/bash
+# This file is for installing ROS on any PC with Ubuntu.
+
 echo "First argument : ROS-distro indigo-kinetic-melodic"
 echo "indigo"
 echo "kinetic"
