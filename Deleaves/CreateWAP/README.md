@@ -8,9 +8,9 @@ Click **Add**, chose **Wi-Fi** and **Create ...**
 Then enter the in each tab what's on the screenshots.
 ![General_tab](/Deleaves/CreateWAP/Screenshot/General_tab.png)
 ![Wi-Fi_tab](/Deleaves/CreateWAP/Screenshot/Wi-Fi_tab.png)
-![Wi-Fi_Security_tab](/Deleaves/CreateWAP/Screenshot/Wi-Fi_Security_tab.png)
-![IPv4_Setting_tab](/Deleaves/CreateWAP/Screenshot/IPv4_Setting_tab.png)
-![IPv6_Setting_tab](/Deleaves/CreateWAP/Screenshot/IPv6_Setting_tab.png)
+![Wi-Fi_Security_tab](/Deleaves/CreateWAP/Screenshot/Wi-Fi_Security.png)
+![IPv4_Setting_tab](/Deleaves/CreateWAP/Screenshot/IPv4_Setting.png)
+![IPv6_Setting_tab](/Deleaves/CreateWAP/Screenshot/IPv6_Setting.png)
 
 
 Next enter in terminal :
