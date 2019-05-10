@@ -23,14 +23,11 @@ echo "source ~/src/catkin_ws/devel/setup.bash" >> ~/.bashrc
 ```
 
 ## Activate all CPU :
+
 ```
-sudo su && \
-echo 1 > /sys/devices/system/cpu/cpu1/online && \
-echo 1 > /sys/devices/system/cpu/cpu2/online && \
-echo 1 > /sys/devices/system/cpu/cpu3/online && \
-echo 1 > /sys/devices/system/cpu/cpu4/online && \
-echo 1 > /sys/devices/system/cpu/cpu5/online
+sudo nvpmodel -m [mode]
 ```
+For max performance use mode 0 and refer to this [link](https://www.jetsonhacks.com/2017/03/25/nvpmodel-nvidia-jetson-tx2-development-kit/) for all mode documentation.
     
 ## Install dependencies :
 ```
