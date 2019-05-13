@@ -5,7 +5,7 @@ This is the procedure to create a Wireless Access Point from your Jetson TX2. Wh
 
 Click on the top right corner network icon, then **Edit Connections ...** 
 Click **Add**, chose **Wi-Fi** and **Create ...**
-Then enter the in each tab what's on the screenshots.
+Then enter in each tab what's on the screenshots.
 
 ![General_tab](/Deleaves/CreateWAP/Screenshot/General_tab.png)
 ![Wi-Fi_tab](/Deleaves/CreateWAP/Screenshot/Wi-Fi_tab.png)
