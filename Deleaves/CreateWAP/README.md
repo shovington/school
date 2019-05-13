@@ -24,7 +24,7 @@ and make sure this is the exact same thing as the WAP-Name file in this folder.
 Click on the top right corner network icon, then **Connect to Hidden Wi-Fi Network...**.
 Select the network you've just created (You should see a confirmation of connection).
 
-Repeat the same thin on your PC.
+Repeat the same thing on your PC.
 
 ## Connect to Jetson via ssh :
 
