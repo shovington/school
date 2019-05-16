@@ -93,7 +93,7 @@ Then :
 ```
 make -j6
 sudo make install
-cd ../ && rm -rf /build
+cd ../ && rm -rf build/
 ```
 
 ## Clean up :
