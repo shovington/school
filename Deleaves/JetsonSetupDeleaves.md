@@ -65,6 +65,36 @@ wget https://raw.githubusercontent.com/mavlink/mavros/master/mavros/scripts/inst
 cd ~/src/catkin_ws && \
 catkin_make -j6;
 ```
+## Install opencv for CUDA :
+```
+cd ~/src && \
+git clone https://github.com/opencv/opencv.git
+cd opencv && \
+git checkout 3.3.1
+cd ..
+```
+```
+git clone https://github.com/opencv/opencv_contrib.git
+cd opencv && \
+git checkout 3.3.1
+cd ..
+```
+```
+cd opencv && \
+mkdir build && \
+cd build && \
+```
+Try cmake with this command line
+```
+cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local -D OPENCV_EXTRA_MODULES_PATH=../../opencv_contrib/modules -D WITH_CUDA=ON -D WITH_TBB=ON -D ENABLE_FAST_MATH=1 -D CUDA_FAST_MATH=1 -D WITH_CUBLAS=1 -D WITH_QT=OFF ..
+```
+But if it doesn't work, add **-DENABLE_PRECOMPILED_HEADERS=OFF**.
+Then :
+```
+make -j6
+sudo make install
+cd ../ && rm -rf /build
+```
 
 ## Clean up :
 ```
