@@ -12,13 +12,13 @@ NOTE:   The username will be nvidia and password nvidia
 
 ## To install ROS kinetic :
 ```
-cd ~/src && git clone https://github.com/jetsonhacks/installROSTX2.git && \
-cd installROSTX2 && ./installROS.sh -p ros-kinetic-desktop-full   
+cd ~/src && git clone https://github.com/jetsonhacks/installROSTX2.git
+cd installROSTX2 && ./installROS.sh -p ros-kinetic-ros-base   
 ```
  
 ## Create workspace :
 ```
-cd ~/src && git clone https://github.com/EskimoDesignLab/catkin_ws.git && \
+cd ~/src && git clone https://github.com/EskimoDesignLab/catkin_ws.git
 echo "source ~/src/catkin_ws/devel/setup.bash" >> ~/.bashrc
 ```
 
@@ -44,7 +44,7 @@ sudo apt-get install qdbus qmlscene qt5-default qt5-qmake qtbase5-dev-tools qtch
 sudo cp config/99-realsense-libusb.rules /etc/udev/rules.d/ && \
 sudo udevadm control --reload-rules && udevadm trigger && \
 cd /usr/lib/aarch64-linux-gnu/ && \
-sudo ln -sf tegra/libGL.so libGL.so
+sudo ln -sf tegra/libGL.so libGL.so && \
 cd ~/src/catkin_make/src/librealsense && \
 mkdir build && \
 cd build && \
@@ -53,36 +53,42 @@ make -j6 && \
 sudo make install;
 ```
 ```
-cd ~/src/catkin_ws/src && \
-git clone https://github.com/intel-ros/realsense.git && \
+cd ~/src/catkin_ws/src
+git clone https://github.com/intel-ros/realsense.git
 ```
 ```
 sudo apt-get install ros-kinetic-mavros*
 wget https://raw.githubusercontent.com/mavlink/mavros/master/mavros/scripts/install_geographiclib_datasets.sh
-./install_geographiclib_datasets.sh
+sudo chmod +x instainstall_geographiclib_datasets.sh
+sudo ./install_geographiclib_datasets.sh
 ```
 ```
-cd ~/src/catkin_ws && \
+cd ~/src/catkin_ws 
+git clone https://github.com/daniel-dsouza/vision_opencv.git
+sudo apt-get install ros-kinetic-image-transport
+```
+```
+cd ~/src/catkin_ws
 catkin_make -j6;
 ```
 ## Install opencv for CUDA :
 ```
-cd ~/src && \
+cd ~/src
 git clone https://github.com/opencv/opencv.git
-cd opencv && \
+cd opencv
 git checkout 3.3.1
 cd ..
 ```
 ```
 git clone https://github.com/opencv/opencv_contrib.git
-cd opencv && \
+cd opencv
 git checkout 3.3.1
 cd ..
 ```
 ```
-cd opencv && \
-mkdir build && \
-cd build && \
+cd opencv
+mkdir build
+cd build
 ```
 Try cmake with this command line
 ```
