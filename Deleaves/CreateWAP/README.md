@@ -19,19 +19,24 @@ Next enter in terminal :
 sudo gedit /etc/NetworkManager/system-connections/${WAP_NAME}
 ```
 and make sure this is the exact same thing as the WAP-Name file in this folder.
+
+Add the following line to /etc/modprobe.d/bcmdhd.conf:
+```
+options bcmdhd op_mode=2
+```
 ## Connect to the new Wi-Fi network :
 
 Click on the top right corner network icon, then **Connect to Hidden Wi-Fi Network...**.
 Select the network you've just created (You should see a confirmation of connection).
 
-Repeat the same thing on your PC.
 
 ## Connect to Jetson via ssh :
 
-In terminal :
+With Ubuntu, in terminal :
 ```
 ssh ${JETSON_USERNAME}@10.42.0.1
 ```
+With Windows, dowload putty and connect to 10.42.0.1
 
 
 
