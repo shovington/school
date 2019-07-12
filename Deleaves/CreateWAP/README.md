@@ -20,10 +20,8 @@ sudo gedit /etc/NetworkManager/system-connections/${WAP_NAME}
 ```
 and make sure this is the exact same thing as the WAP-Name file in this folder.
 
-Add the following line to /etc/modprobe.d/bcmdhd.conf:
-```
-options bcmdhd op_mode=2
-```
+Then follow the instructions on this link :
+https://elinux.org/Jetson/TX1_WiFi_Access_Point
 ## Connect to the new Wi-Fi network :
 
 Click on the top right corner network icon, then **Connect to Hidden Wi-Fi Network...**.
